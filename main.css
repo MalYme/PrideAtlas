@@ -27,7 +27,7 @@ main {
 }
 
 .S1 {
-    outline: 1px solid rgb(206, 178, 17); /*DEBUG*/
+    /* outline: 1px solid rgb(206, 178, 17); DEBUG */
     font-size: 16px;
     height: auto; /* Laisse la hauteur s'adapter au contenu */
     width: 90%;
@@ -69,8 +69,11 @@ main {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    width: 300px;
+    width: 80%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-height: 80vh;
+    max-width: 600px;
+    overflow-y: auto; /* Permet le défilement vertical si le contenu est trop long */
 }
 
 /* Bouton de fermeture */
