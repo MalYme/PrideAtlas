@@ -2,8 +2,55 @@
     --purpur1 : rgb(80, 13, 97);
 }
 
-body{
-    background-color: var(--purpur1);
-
+html, body {
+    background: linear-gradient(0deg, rgb(80, 13, 97),rgb(80, 13, 97), #814646);
+    outline: 1px solid rgb(0, 0, 0); /*DEBUG*/
+    font-size: 16px;
+    min-height: 100vh; /* Assurer que le body prend toute la hauteur */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Organiser header, main et footer en colonne */
+    box-sizing: border-box;
+    align-items: center;
 }
 
+header, footer {
+    height: 40px;
+    width: 100%;
+    /* background-color: gray; DEBUG */
+}
+
+main {
+    flex-grow: 1; /* Permet au contenu principal de remplir l'espace */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.S1 {
+    outline: 1px solid rgb(206, 178, 17); /*DEBUG*/
+    font-size: 16px;
+    height: 130px;
+    width: 90%;
+    display: flex;
+}
+
+.S1 a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+.S1 img {
+    width: 175px; /* Taille des images */
+    height: 100px; /* Garde les proportions */
+    border-radius: 10px; /* Coins arrondis */
+    transition: transform 0.2s; /* Effet au survol */
+    margin: 10px;
+}
+
+.S1 img:hover {
+    transform: scale(1.1); /* Agrandit légèrement l'image au survol */
+}
