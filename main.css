@@ -1,0 +1,9 @@
+:root{
+    --purpur1 : rgb(80, 13, 97);
+}
+
+body{
+    background-color: var(--purpur1);
+
+}
+
