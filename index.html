@@ -6,6 +6,7 @@
     <title>Pride Atlas</title>
     <link rel="icon" href="Mal.jpg">
     <link rel="stylesheet" href="main.css">
+    
 
 </head>
 <body>
@@ -15,26 +16,69 @@
     
     <main>
         <div class="S1">
-            <a href="https://exemple.com" target="_blank">
-                <img src="lgbt.png" alt="Drapeau LGBT">
-            </a> 
-            <a href="https://exemple.com" target="_blank">
-                <img src="ProgressPrideFlag.jpg" alt="Drapeau Progress Pride Flag">
-            </a>
-            <a href="https://exemple.com" target="_blank">
-                <img src="Asexuel.png" alt="Drapeau Asexuel">
-            </a>
-            <a href="https://exemple.com" target="_blank">
-                <img src="Bi.png" alt="Drapeau Bi">
-            </a> 
-            <a href="https://exemple.com" target="_blank">
-                <img src="Gay.png" alt="Drapeau Gay">
-            </a>
-            <a href="https://exemple.com" target="_blank">
-                <img src="Lesbian.png" alt="Drapeau Lesbienne">
-            </a>
+           
+            <img src="lgbt.png" alt="Drapeau LGBT" class="flag" onclick="openModal('modal1')">
+            <img src="ProgressPrideFlag.jpg" alt="Drapeau Progress Pride Flag" class="flag" onclick="openModal('modal2')">
+            <img src="Asexuel.png" alt="Drapeau Asexuel" class="flag" onclick="openModal('modal3')">
+            <img src="Bi.png" alt="Drapeau Bi" class="flag" onclick="openModal('modal4')">
+            <img src="Gay.png" alt="Drapeau Gay" class="flag" onclick="openModal('modal5')">
+            <img src="Lesbian.png" alt="Drapeau Lesbian" class="flag" onclick="openModal('modal6')">
+            
         </div>
     </main>
+    
+        <!-- Fenêtre modale 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Informations sur le Drapeau 1</h2>
+            <p>Voici des informations sur ce drapeau.</p>
+        </div>
+    </div>
+
+    <!-- Fenêtre modale 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Informations sur le Drapeau 2</h2>
+            <p>Voici des informations sur ce drapeau.</p>
+        </div>
+    </div>
+    
+    <!-- Fenêtre modale 3 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Informations sur le Drapeau 3</h2>
+            <p>Voici des informations sur ce drapeau.</p>
+        </div>
+    </div>
+
+    <!-- Fenêtre modale 4 -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>Informations sur le Drapeau 4</h2>
+            <p>Voici des informations sur ce drapeau.</p>
+        </div>
+    </div>
+   
+    <!-- Fenêtre modale 5 -->
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h2>Informations sur le Drapeau 5</h2>
+            <p>Voici des informations sur ce drapeau.</p>
+        </div>
+    </div>
+    <!-- Fenêtre modale 3 -->
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <h2>Informations sur le Drapeau 6</h2>
+            <p>Voici des informations sur ce drapeau.</p>
+        </div>
+    </div>
     
     
     
@@ -43,5 +87,8 @@
     <footer>
 
     </footer>
+
+
+    <script src="app.js"></script>
 </body>
 </html>

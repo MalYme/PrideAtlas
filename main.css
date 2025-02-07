@@ -1,9 +1,5 @@
-:root{
-    --purpur1 : rgb(80, 13, 97);
-}
-
 html, body {
-    background: linear-gradient(0deg, rgb(80, 13, 97),rgb(80, 13, 97), #814646);
+    background: linear-gradient(0deg, rgb(80, 13, 97), rgb(80, 13, 97), #814646);
     outline: 1px solid rgb(0, 0, 0); /*DEBUG*/
     font-size: 16px;
     min-height: 100vh; /* Assurer que le body prend toute la hauteur */
@@ -19,7 +15,6 @@ html, body {
 header, footer {
     height: 40px;
     width: 100%;
-    /* background-color: gray; DEBUG */
 }
 
 main {
@@ -34,23 +29,65 @@ main {
 .S1 {
     outline: 1px solid rgb(206, 178, 17); /*DEBUG*/
     font-size: 16px;
-    height: 130px;
+    height: auto; /* Laisse la hauteur s'adapter au contenu */
     width: 90%;
     display: flex;
+    flex-wrap: wrap; /* Permet de faire passer les images à la ligne quand elles sont trop larges */
+    justify-content: center; /* Centre les éléments à l'intérieur de S1 */
+    gap: 20px; /* Espacement entre les images */
 }
 
-.S1 a {
-    text-decoration: none; /* Supprime le soulignement des liens */
-}
-
-.S1 img {
+.flag {
     width: 175px; /* Taille des images */
-    height: 100px; /* Garde les proportions */
+    height: auto; /* Permet à l'image de conserver ses proportions */
     border-radius: 10px; /* Coins arrondis */
     transition: transform 0.2s; /* Effet au survol */
-    margin: 10px;
+    cursor: pointer;
 }
 
 .S1 img:hover {
     transform: scale(1.1); /* Agrandit légèrement l'image au survol */
+}
+
+/* Style de la modale (cachée par défaut) */
+.modal {
+    display: none; /* Cachée par défaut */
+    position: fixed;
+    z-index: 10; /* Devant tout */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenu de la modale */
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Bouton de fermeture */
+.close {
+    font-size: 24px;
+    cursor: pointer;
+    float: right;
+}
+
+/* Media Query pour les petits écrans (ex: mobile) */
+@media (max-width: 600px) {
+    .flag {
+        width: 140px; /* Réduit la taille des images sur mobile */
+    }
+
+    .S1 {
+        flex-direction: column; /* Les images seront empilées en colonne */
+        align-items: center; /* Centrer les images */
+    }
 }
