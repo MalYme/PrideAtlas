@@ -86,7 +86,7 @@ main {
 /* Media Query pour les petits écrans (ex: mobile) */
 @media (max-width: 600px) {
     .flag {
-        width: 140px; /* Réduit la taille des images sur mobile */
+        width: 300px; /* Réduit la taille des images sur mobile */
     }
 
     .S1 {
