@@ -10,12 +10,22 @@ html, body {
     flex-direction: column; /* Organiser header, main et footer en colonne */
     box-sizing: border-box;
     align-items: center;
+
+
 }
+
+.varela-regular {
+    font-family: "Varela", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 header, footer {
     height: 40px;
     width: 100%;
 }
+
+
 
 main {
     flex-grow: 1; /* Permet au contenu principal de remplir l'espace */
@@ -35,6 +45,7 @@ main {
     flex-wrap: wrap; /* Permet de faire passer les images à la ligne quand elles sont trop larges */
     justify-content: center; /* Centre les éléments à l'intérieur de S1 */
     gap: 20px; /* Espacement entre les images */
+    margin: 10px;
 }
 
 .flag {
@@ -93,4 +104,23 @@ main {
         flex-direction: column; /* Les images seront empilées en colonne */
         align-items: center; /* Centrer les images */
     }
+}
+
+
+footer{
+    position:fixed;
+    background-color: rgb(54, 54, 54);
+    padding: 15px;
+    color: rgb(107, 103, 103);
+    text-align: center;
+    width: 100%;
+    height: 18px;
+    padding: 0.7em 0em;
+    bottom: 0%;
+
+
+}
+footer a {
+    text-decoration: none;
+    color: rgb(180, 174, 174);
 }
